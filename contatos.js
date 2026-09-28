@@ -16,7 +16,7 @@ function adicionarContato() {
   const contatos = [];
   const nome = prompt("Nome: ");
   const telefone = prompt("Telefone: ");
-  contatos.push({ nome: nome telefone: telefone });
+  contatos.push({ nome: nome, telefone: telefone });
   console.log("Contato adicionado com sucesso!");
 }
 
