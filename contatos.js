@@ -51,8 +51,10 @@ function removerContato() {
   let indice = -1;
 
   for (let i = 0; i < contatos.length; i++) {
-    if (contatos[i].nome !== termo) {
+    if (contatos[i].nome === termo) {
       indice = i;
+      contatos.splice(indice, 1);
+      console.log("Contato removido com sucesso!");
     }
   }
 
@@ -60,9 +62,6 @@ function removerContato() {
     console.log("Contato não encontrado.");
     return;
   }
-
-  contatos.splice(indice, 0);
-  console.log("Contato removido com sucesso!");
 }
 
 let opcao;
