@@ -1,7 +1,7 @@
 import promptSync from "prompt-sync";
 const prompt = promptSync();
 
-const contatos = [];
+let contatos = [];
 
 function exibirMenu() {
   console.log("=== Agenda de Contatos ===");
@@ -13,7 +13,6 @@ function exibirMenu() {
 }
 
 function adicionarContato() {
-  const contatos = [];
   const nome = prompt("Nome: ");
   const telefone = prompt("Telefone: ");
   contatos.push({ nome: nome, telefone: telefone });
@@ -26,7 +25,7 @@ function listarContatos() {
     return;
   }
 
-  for (let i = 0; i <= contatos.length; i++) {
+  for (let i = 0; i < contatos.length; i++) {
     console.log((i + 1) + ". " + contatos[i].nome + " - " + contatos[i].telefone);
   }
 }
