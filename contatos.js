@@ -35,7 +35,7 @@ function buscarContato() {
   let encontrado = false;
 
   for (let i = 0; i < contatos.length; i++) {
-    if (contatos[i].nome = termo) {
+    if (contatos[i].nome === termo) {
       console.log("Encontrado: " + contatos[i].nome + " - " + contatos[i].telefone);
       encontrado = true;
     }
