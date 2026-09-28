@@ -66,14 +66,6 @@ function removerContato() {
   console.log("Contato removido com sucesso!");
 }
 
-function exibirMenu() {
-  console.log("=== Agenda de Contatos ===");
-  console.log("1. Adicionar contato");
-  console.log("2. Listar contatos");
-  console.log("3. Buscar contato por nome");
-  console.log("0. Sair");
-}
-
 let opcao;
 do {
   exibirMenu();
