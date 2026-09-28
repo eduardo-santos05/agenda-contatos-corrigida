@@ -74,9 +74,7 @@ do {
   if (opcao === "1") {
     adicionarContato();
   } else if (opcao === "2") {
-    for (let i = 0; i < 3; i++) {
-      console.log((i + 1) + ". " + contatos[i].nome + " - " + contatos[i].telefone);
-    }
+    listarContatos();
   } else if (opcao === "3") {
     buscarContato();
   } else if (opcao === "4") {
